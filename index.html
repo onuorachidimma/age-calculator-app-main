@@ -2,56 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Onuora Chidimma">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
     <title>Frontend Mentor | Age calculator app</title>
 
   </head>
   <body>
     <main>
       
-      <form action="">
-        <section class="formfield">
-            <label for="day">DAY</label>
-            <input type="text" name="day" id="day" placeholder="DD">
-            <p id="errorday"></p>
-         </section>
-         <section class="formfield">
-           <label for="month">MONTH</label>
-           <input type="text" name="month" id="month" placeholder="MM">
-          <p id="errormonth"></p>
-          </section><section class="formfield">
-            <label for="year">YEAR</label>
-            <input type="text" name="year" id="year" placeholder="YYYY">
-            <p id="erroryear"></p>
-          </section>
-      </form>
-      
-      <section class="bimg">
-        <hr>
-        <button class="btn" type="submit"><img id="image" src="assets/images/icon-arrow.svg" alt="Arrow icon"></button>
-      </section>
-
-      <section class="detail">
-        <h1><span id="yeardetails">--</span> years</h1>
-        <h1><span id="monthdetails">--</span> months</h1>
-        <h1><span id="daydetails">--</span> days</h1>
+      <section class="container">
+        <form action="">
+          <section class="formfield">
+              <label for="day">DAY</label>
+              <input type="text" name="day" id="day" placeholder="DD">
+              <p id="errorday"></p>
+           </section>
+           <section class="formfield">
+             <label for="month">MONTH</label>
+             <input type="text" name="month" id="month" placeholder="MM">
+            <p id="errormonth"></p>
+            </section><section class="formfield">
+              <label for="year">YEAR</label>
+              <input type="text" name="year" id="year" placeholder="YYYY">
+              <p id="erroryear"></p>
+            </section>
+        </form>
         
+        <section class="bimg">
+          <hr>
+          <button class="btn" type="submit"><img id="image" src="assets/images/icon-arrow.svg" alt="Arrow icon"></button>
+        </section>
+  
+        <section class="detail">
+          <h1><span id="yeardetails">--</span> years</h1>
+          <h1><span id="monthdetails">--</span> months</h1>
+          <h1><span id="daydetails">--</span> days</h1>
+        </section>
+
       </section>
       <script src="main.js"></script>
     </main>
-
-
-    
-    
-    
-    
-   
   </body>
 </html>
