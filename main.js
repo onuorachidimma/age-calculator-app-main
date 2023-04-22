@@ -17,7 +17,7 @@ const expectednum = new Date()
 
 
 image.addEventListener('click', (e) => {
-    // transform.target.style.border = "red";
+    // i.style.border = "red";
     errorMessageDay.innerText = ''
     errorMessageMonth.innerText = ''
     errorMessageYear.innerText = ''

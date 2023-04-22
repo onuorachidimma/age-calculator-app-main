@@ -36,6 +36,11 @@ input::placeholder{
     
 }
 
+/* input#day:focus{
+    border: blue 1px solid;
+    font-weight: bolder;
+} */
+
 
 
 hr{
@@ -63,6 +68,10 @@ button{
     margin-top: 5px;
     
     
+}
+
+button:focus{
+    background-color: hsl(0, 0%, 8%);
 }
 
 img{
