@@ -1,5 +1,4 @@
-*, *::before, *::after{
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
 }
@@ -7,73 +6,60 @@
 body{
     background-color: hsl(0, 0%, 94%);
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100hv;
-    
 }
 
 main{
     margin: auto;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+    width: 80%;
+    background-color: white;
+    margin-top: 15%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-right-radius: 100px;    
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(0, 0%, 100%);
-    width: 400px;
-    margin-top: 100px;
-    padding: 20px;
-    border-radius: 10px;
-    border-bottom-right-radius: 70px;
+    margin: auto;
+    padding: 10px;   
 }
 
-form{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    align-items: flex-start;
-    gap: 20px;
-    
+label{
+    display: block;
+    color: hsl(0, 1%, 44%);
+    font-size: xx-small;
+    letter-spacing: 2px;
 }
 
 input{
-    width: 80px;
-    display: block;
-    height: 29px;
-    margin-top: 5px;
+    width: 70%;
+    text-indent: 10px;
+    font-family: 'Poppins';
     border: hsl(0, 0%, 86%) solid 1px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    height: 35px;
+    margin-top: 5px;
+    color: hsl(0, 0%, 8%);
+    border-radius: 5px;    
 }
 
-input::placeholder{
-    font-family: 'Poppins', sans-serif;
-    text-indent: 15px;
-    color: hsl(0, 1%, 44%);
-    font-weight: 800;   
+.formfield p{
+    color: red;
+    font-size: xx-small;
+    margin: 0%;
+} 
+
+.formbox{
+    display: flex;   
 }
 
-hr{
-    width: 300px;
-    margin-left: 0%;
-    margin-top: 30px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
+.hr-line{
+    flex-grow: 1;
     border-top: hsl(0, 0%, 86%) 1px solid;
 }
 
 .bimg{
     display: flex;
-    margin-right: -20px
+    align-items: center;
 }
 
 button{
@@ -82,8 +68,6 @@ button{
     background-color: hsl(259, 100%, 65%);
     width: 50px;
     height: 50px;
-    margin-right: 30px;
-    margin-top: 5px;
 }
 
 button:focus{
@@ -94,28 +78,18 @@ img{
     height: 20px;
 }
 
-h1{
-    margin: 0px;
-    color: hsl(0, 0%, 8%);   
-}
-
-label{
-    letter-spacing: 2px;
-    font-size: xx-small;
-    color: hsl(0, 1%, 44%); 
-}
-
 .detail{
     font-style: italic;
-    font-size: xx-large;
+    font-size: large;
+    margin-top: -1rem;
+}
+
+.detail h1{
+    color: hsl(0, 0%, 8%);
+    margin-bottom: -1rem;
 }
 
 span{
     color: hsl(259, 100%, 65%);
 }
 
-.formfield p{
-    color: red;
-    font-size: xx-small;
-    margin: 0%;
-}

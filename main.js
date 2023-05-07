@@ -24,13 +24,13 @@ image.addEventListener('click', (e) => {
     if (day.value == '' || month.value == '' || year.value == '') {
         e.preventDefault()
         if (day.value == '') {
-            errorMessageDay.innerText = 'this field is required'
+            errorMessageDay.innerText = 'This field is required'
         }
         if (month.value == '') {
-            errorMessageMonth.innerText = 'this field is required'
+            errorMessageMonth.innerText = 'This field is required'
         }
         if (year.value == '') {
-            errorMessageYear.innerText = 'this field is required'
+            errorMessageYear.innerText = 'This field is required'
         }
 
     } else if (year.value > expectednum.getFullYear()) {
@@ -43,7 +43,7 @@ image.addEventListener('click', (e) => {
         month.value = ''
     } else if (day.value > 31) {
         e.preventDefault()
-        errorMessageDay.innerText = 'must be a valid Day'
+        errorMessageDay.innerText = 'Must be a valid Day'
         day.value = ''
     } else {
         calculateAge(year.value, month.value, day.value)

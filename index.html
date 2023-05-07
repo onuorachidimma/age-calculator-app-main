@@ -15,37 +15,39 @@
   </head>
   <body>
     <main>
-      
-      <section class="container">
+      <div class="container">
         <form action="">
-          <section class="formfield">
+          <div class="formbox">
+            <section class="formfield">
               <label for="day">DAY</label>
               <input type="text" name="day" id="day" placeholder="DD">
               <p id="errorday"></p>
-           </section>
-           <section class="formfield">
-             <label for="month">MONTH</label>
-             <input type="text" name="month" id="month" placeholder="MM">
-            <p id="errormonth"></p>
-            </section><section class="formfield">
+            </section>
+            <section class="formfield">
+              <label for="month">MONTH</label>
+              <input type="text" name="month" id="month" placeholder="MM">
+              <p id="errormonth"></p>
+            </section>
+            <section class="formfield">
               <label for="year">YEAR</label>
               <input type="text" name="year" id="year" placeholder="YYYY">
               <p id="erroryear"></p>
             </section>
+          </div>
         </form>
         
-        <section class="bimg">
-          <hr>
+        <div class="bimg">
+          <hr class="hr-line">
           <button class="btn" type="submit"><img id="image" src="assets/images/icon-arrow.svg" alt="Arrow icon"></button>
-        </section>
+        </div>
   
-        <section class="detail">
+        <div class="detail">
           <h1><span id="yeardetails">--</span> years</h1>
           <h1><span id="monthdetails">--</span> months</h1>
           <h1><span id="daydetails">--</span> days</h1>
-        </section>
+        </div>
 
-      </section>
+      </div>
       <script src="main.js"></script>
     </main>
   </body>
